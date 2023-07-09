@@ -1,0 +1,1017 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+@font-face {
+    font-family: kratos;
+    src: url("Fonte-godofwar/GODOFWAR.TTF");
+}
+
+/* ______-NAV 1_________ */
+#nav-1 {
+    position: fixed;
+    width: 100vw;
+    background-color: #25262c;
+    height: 6vh;
+    z-index: 10;
+
+
+}
+
+#nav-1 ul {
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #8F8F8F;
+    height: 6vh;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+
+}
+
+#nav-1 a {
+
+    text-align: center;
+
+    text-decoration: none;
+    height: 5vh;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    display: block;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #8F8F8F;
+    font-family: kratos;
+
+    transition: all 0.2s linear;
+}
+
+.img-sair {
+    position: fixed;
+    margin: 1vh;
+    right: 10%;
+    width: 6vw;
+    justify-content: space-between;
+    z-index: 999;
+    cursor: pointer;
+    height: 4vh;
+    align-items: center;
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+.img-sair img {
+    width: 2vw;
+}
+
+.img-sair a {
+    color: #ffd760;
+    text-decoration: none;
+    font-weight: 700;
+    width: 6vw;
+    gap: 1vh;
+
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    line-height: 12px;
+    font-family: "Open Sans", "Montserrat", sans-serif;
+}
+
+.img-sair a:hover {
+    color: white;
+}
+
+#nav-1 a:hover {
+    color: white;
+
+
+}
+
+
+#nav-1 a:active {}
+
+#nav-1 img {
+    position: absolute;
+    margin-right: 75vh;
+
+
+
+
+    border-radius: 50%;
+    animation: pulsar 4s infinite;
+
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* ________NAV 2 __________ */
+
+#nav-2 {
+    position: fixed;
+    height: 18vh;
+    width: 100vw;
+    top: 6%;
+    background-color: #25262c;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+
+
+
+
+
+
+}
+
+.rgba {
+    width: 100vw;
+    height: 1vh;
+
+
+    position: fixed;
+    left: 0;
+    margin-top: 18vh;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #ff0000 49%, #f9fc4f 80%, #00C0FF 100%);
+    animation: slidebg 5s linear infinite;
+
+
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 100vw;
+    }
+}
+
+
+
+
+#nav-2 .logo img {
+    width: 12vw;
+
+
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 15vh;
+
+
+}
+
+.input-pesquisa {
+
+    width: 35vw;
+    padding: 1vw;
+    height: 15vh;
+
+    display: inline-block;
+    align-items: center;
+
+
+
+
+
+
+}
+
+
+#nav-2 input {
+    height: 10vh;
+    width: 100%;
+
+    border-radius: 10px;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.5vw;
+    border: none;
+    position: relative;
+
+}
+
+.compra {
+
+    width: 45vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+
+
+}
+
+#nav-2 #button-carrinho-finalizar button {
+
+    width: 10vw;
+    height: 3vw;
+
+}
+
+#preco-carrinho span {}
+
+#preco-carrinho h2 {
+    color: #000;
+    gap: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compra button {
+
+    height: 10vh;
+
+    width: 13vw;
+    display: inline-block;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    background-color: inherit;
+    color: white;
+    border: 1px solid rgb(87, 80, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    transition: 0.5s;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+#nav-button-carrinho {
+    background-color: red;
+    width: 10vw;
+
+}
+
+.compra a {
+    text-decoration: none;
+}
+
+.icon-compra:hover {
+    background-color: #ffd760;
+    border: none;
+    transition: 0.5s;
+    color: #000;
+}
+
+.icon-compra:hover {
+    background-color: rgb(248 3 3);
+    border: none;
+}
+
+.icon-compra img {
+    width: 3vw;
+    transition: 0.5s;
+    background-color: rgb(248 3 3);
+    border-radius: 40%;
+
+
+}
+
+.icon-compra-2:hover {
+    border-radius: 10px;
+    border: 1px solid rgb(248 3 3);
+}
+
+.icon-compra-2 img {
+    width: 2.5vw;
+
+}
+
+.icon-compra-3 span {
+    background-color: rgb(248 3 3);
+    width: 2vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #000;
+    font-weight: 700;
+}
+
+
+.icon-compra-3:hover {
+    border-radius: 10px;
+    border: 1px solid rgb(248 3 3);
+}
+
+#icon-home {
+    width: 2vw;
+    background-color: #ffd76000;
+    border: 1px solid rgb(248 3 3);
+    padding: 0.2vw;
+}
+
+#icon-sair {
+    border: 1px solid red;
+    z-index: 9;
+    position: fixed;
+}
+
+
+
+
+
+
+
+
+
+/* ______NAV 3_______ */
+
+#nav-3 {
+    width: 100vw;
+    height: 5vh;
+
+    position: fixed;
+    /* margin-top: 30.6vh; */
+    margin-top: 24vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    z-index: 8;
+
+}
+
+#nav-3 ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 85vw;
+    margin: 0 auto;
+
+    list-style: none;
+    background-color: #25262c;
+
+
+}
+
+#nav-3 li {
+    color: white;
+    text-decoration: none;
+
+    height: 5vh;
+
+    width: 20vw;
+
+}
+
+#nav-3 a {
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid #8F8F8F;
+    height: 5vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+
+
+
+}
+
+.blue:hover {
+    background-color: #0057a9;
+}
+
+.red:hover {
+    background-color: #00AC00;
+    ;
+}
+
+.orange:hover {
+    background-color: rgb(255, 136, 0);
+}
+
+.green:hover {
+    background-color: #6A00A9;
+}
+
+.roxo:hover {
+    background-color: rgb(134, 36, 163);
+}
+
+.blue-2:hover {
+    background-color: rgb(0, 195, 255);
+}
+
+/* _________-MENU DROPDRONW NAV 3_________ */
+#dropdown-menu {
+    display: none;
+    height: 65vh;
+    width: 14vw;
+
+
+
+
+
+}
+
+#dropdown-menu ul {
+
+    height: 60vh;
+    display: flex;
+    width: 14.8vw;
+    display: flex;
+    flex-direction: column;
+
+
+    background-image: linear-gradient(45deg, #235e96, #0057a9);
+
+
+
+    font-family: "Montserrat", sans-serif;
+}
+
+#dropdown-menu li {
+
+    display: flex;
+    align-items: flex-start;
+
+    width: 14.8vw;
+    height: 10vh;
+
+
+
+
+
+
+}
+
+#dropdown-menu a {
+    border-right: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1vw;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+
+
+
+
+
+}
+
+#dropdown-menu a:hover {
+    background-color: white;
+    color: #0057a9;
+
+
+}
+
+#dropdown:hover #dropdown-menu {
+    display: block;
+    animation: go-back 1.7s;
+}
+
+#dropdown-menu li p {
+    margin-left: 1vw;
+    font-weight: bolder;
+
+
+}
+
+/* _______________________________ */
+#dropdown-menu-2 {
+    display: none;
+    height: 40vh;
+    width: 14vw;
+
+
+
+}
+
+#dropdown-menu-2 ul {
+
+    height: 40vh;
+    display: flex;
+    width: 14.8vw;
+    display: flex;
+    flex-direction: column;
+
+
+    background-image: linear-gradient(45deg, #00AC00, #00AC00);
+
+
+
+    font-family: "Montserrat", sans-serif;
+}
+
+#dropdown-menu-2 li {
+
+    display: flex;
+    align-items: flex-start;
+
+    width: 14.8vw;
+    height: 10vh;
+
+
+
+
+
+}
+
+#dropdown-menu-2 a {
+    border-right: none;
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+#dropdown-menu-2 a:hover {
+    background-color: white;
+    color: #00AC00;
+
+
+}
+
+#dropdown:hover #dropdown-menu-2 {
+    display: block;
+    animation: go-back 1.7s;
+}
+
+#dropdown-menu-2 li p {
+    margin-left: 1vw;
+    font-weight: bolder;
+}
+
+
+/* ___________________________ */
+
+
+
+#dropdown-menu-3 {
+    display: none;
+    height: 65vh;
+    width: 14vw;
+
+
+
+}
+
+#dropdown-menu-3 ul {
+
+    height: 60vh;
+    display: flex;
+    width: 14.8vw;
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: rgb(255, 136, 0);
+
+
+
+    font-family: "Montserrat", sans-serif;
+}
+
+#dropdown-menu-3 li {
+
+    display: flex;
+    align-items: flex-start;
+
+    width: 14.8vw;
+    height: 10vh;
+
+
+
+
+
+}
+
+#dropdown-menu-3 a {
+    border-right: none;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+#dropdown-menu-3 a:hover {
+    background-color: white;
+    color: rgb(255, 136, 0);
+
+
+}
+
+#dropdown:hover #dropdown-menu-3 {
+    display: block;
+    animation: go-back 1.7s;
+}
+
+#dropdown-menu-3 li p {
+    margin-left: 1vw;
+    font-weight: bolder;
+}
+
+/* ___________________________ */
+
+#dropdown-menu-4 {
+    display: none;
+    height: 40vh;
+    width: 14vw;
+
+
+
+}
+
+#dropdown-menu-4 ul {
+
+    height: 40vh;
+    display: flex;
+    width: 14.8vw;
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: #6A00A9;
+
+
+
+    font-family: "Montserrat", sans-serif;
+}
+
+#dropdown-menu-4 li {
+
+    display: flex;
+    align-items: flex-start;
+
+    width: 14.8vw;
+    height: 10vh;
+
+
+
+
+
+}
+
+#dropdown-menu-4 a {
+    border-right: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1vw;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+#dropdown-menu-4 a:hover {
+    background-color: white;
+    color: #6A00A9;
+
+
+}
+
+#dropdown:hover #dropdown-menu-4 {
+    display: block;
+    animation: go-back 1.7s;
+}
+
+#dropdown-menu-4 li p {
+    margin-left: 1vw;
+    font-weight: bolder;
+
+}
+
+
+
+
+@keyframes go-back {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(200%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+
+    100% {
+        transform: scale(1.1);
+        filter: brightness(200%);
+    }
+}
+
+
+
+
+
+
+/* ______MAIN______ */
+
+#main-1 {
+    
+    
+    margin-bottom: 2vh;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#main-1 .bonecos {
+
+    width: 80vw;
+    height: 25vh;
+    margin-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+
+
+
+}
+
+.card-bonecos {
+
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 0.8vw;
+
+
+}
+
+.card-bonecos:hover {
+    box-shadow: 2px 2px 2rem rgb(0, 0, 0);
+    transition: 1s;
+}
+
+#hery img {
+    width: 10vw;
+
+}
+
+#nairobi img {
+    width: 20vw;
+
+
+
+
+}
+
+#pokemon img {
+    width: 6vw;
+}
+
+.hery-texto {
+    height: 20vh;
+    border-radius: 10px 0px 0px 10px;
+    width: 50%;
+    background-color: #217de4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.2vh;
+    font-size: 0.8vw;
+}
+
+.hery-texto p {
+    font-family: kratos;
+}
+
+.hery-texto h2 {
+    color: white;
+    font-size: 1.2vw;
+}
+
+.nairobi-texto p {
+    font-family: kratos;
+}
+
+.nairobi-texto h2 {
+    color: white;
+    font-size: 1.2vw;
+}
+
+.pokemon-texto p {
+    font-family: kratos;
+}
+
+.pokemon-texto h2 {
+    color: white;
+    font-size: 1.2vw;
+}
+
+.img-hery {
+
+    height: 20vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #217de4;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.hery-texto button {
+    width: 8vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1vh;
+    background: inherit;
+    color: white;
+    border: 3px solid rgba(102, 141, 177, 0.789);
+    cursor: pointer;
+
+}
+
+.hery-texto button:hover {
+    box-shadow: 1px 1px 1rem black;
+}
+
+/* ____________ */
+.nairobi-texto {
+    height: 20vh;
+    border-radius: 10px 0px 0px 10px;
+    width: 50%;
+    background-color: #e42121;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.2vh;
+}
+
+.img-nairobi {
+
+    height: 20vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e42121;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.nairobi-texto button {
+    width: 8vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1vh;
+    background: inherit;
+    color: white;
+    border: 3px solid rgba(102, 141, 177, 0.789);
+    cursor: pointer;
+
+}
+
+.nairobi-texto button:hover {
+    box-shadow: 1px 1px 1rem black;
+}
+
+/* __________ */
+.pokemon-texto {
+    height: 20vh;
+    border-radius: 10px 0px 0px 10px;
+    width: 50%;
+    background-color: #f2853c;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.2vh;
+}
+
+.img-pokemon {
+
+    height: 20vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2853c;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.pokemon-texto button {
+    width: 8vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1vh;
+    background: inherit;
+    color: white;
+    border: 3px solid rgba(102, 141, 177, 0.789);
+    cursor: pointer;
+
+}
+
+.pokemon-texto button:hover {
+    box-shadow: 1px 1px 1rem black;
+}
+/* __________PEDIDO_________ */
+
+.vazio{
+    width: 100vw;
+    height: 24vh;
+    border: 1px solid red;
+   
+}
+#section-pedido{
+    width: 100vw;
+    height: 100vh;
+    background-color: #25262c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-pedido{
+    
+   
+    width: 70vw;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.705);
+    height:70vh;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    font-family: kratos;
+}

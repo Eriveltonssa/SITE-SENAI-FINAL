@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gasoek+One&family=Josefin+Sans&display=swap');
+
+
+@font-face {
+    font-family: kratos;
+    src: url("Fonte-godofwar/GODOFWAR.TTF");
+  }
+
+@font-face {
+    font-family: naruto, sans-serif;
+    src: url("Fonte-godofwar/njnaruto.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+#telaLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/img-login/thumb-1920-714040.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bk-kratos video {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    margin-left: -30%;
+    z-index: 1;
+
+}
+
+.login {
+
+    width: 60vw;
+    height: 60vh;
+    border: 4px solid rgb(248 3 3);
+    border-radius: 20px;
+    display: flex;
+    z-index: 10;
+    box-shadow: 2px 2px 2rem black;
+
+
+    animation-name: slide-from-right;
+    animation-duration: 2s;
+
+
+
+
+}
+
+.form {
+    color: white;
+
+    height: 58.8vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    gap: 1vw;
+    background-color: rgba(2, 2, 1, 0.705);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.form h1 {
+
+
+  
+    font-size: 3em;
+    color: #fffdd9;
+    font-size: 5vw;
+
+    color: rgb(248 3 3);
+    font-family: 'Alfa Slab One', cursive, sans-serif;
+    font-family: kratos;
+
+
+
+
+
+
+}
+
+.input {
+
+    width: 80%;
+
+
+
+
+}
+
+.icon-login {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-login img {
+    width: 3vw;
+}
+
+.input input {
+    width: 100%;
+    padding: 2vh;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.input label {
+    width: 100%;
+}
+
+.img-login {
+
+    height: 58.8vh;
+    ;
+    width: 40%;
+    display: flex;
+    border-radius: 20px 0px 0px 20px;
+    border-right: 4px solid rgb(248 3 3);
+
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(2, 2, 1, 0.74);
+
+}
+
+.img-login img {
+    width: 28vw;
+
+}
+
+.bk-kratos {
+
+    position: fixed;
+    margin-left: -22%;
+
+
+    width: 60vw;
+    height: 100vh;
+
+
+
+}
+
+.bk-kratos img {
+    width: 57vw;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    animation-name: slide-from-bottom;
+    animation-duration: 2s;
+}
+
+#login {
+    width: 12vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(248 3 3);
+    color: white;
+    font-weight: bolder;
+    transition: 2s;
+    cursor: pointer;
+
+}
+
+#login:hover {
+    box-shadow: 2px 2px 2rem rgb(255, 255, 255);
+    transition: 1s;
+    color: #000;
+
+    transform: translate(5px);
+}
+
+#login button:active {
+    transform: translate(-10px);
+    box-shadow: 0 5px 10px black;
+    background-color: rgba(255, 255, 255, 0.89);
+
+}
+
+.inscreva-se a {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 12vw;
+    transition: 1s;
+}
+
+.inscreva-se img {
+    width: 1.5vw;
+}
+
+.inscreva-se a:hover {
+    color: aqua;
+    transition: 1s;
+}
+
+@keyframes slide-from-bottom {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-from-right {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    #telaLogin{
+        display: none;
+    }
+    .bk-kratos{
+        display: none;
+    }
+}
+
+@media screen and (min-width:500px) {
+    #telaLogin-device{
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    #telaLogin-device {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 100vw;
+        height: 100vh;
+        background-image: url("img/img-login/thumb-1920-714040.jpg");
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    .bk-kratos video {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        margin-left: -30%;
+        z-index: 1;
+    
+    }
+    
+    .login {
+    
+        width: 80vw;
+        height: 50vh;
+        border: 4px solid rgb(248 3 3);
+        border-radius: 20px;
+        display: flex;
+        z-index: 10;
+        box-shadow: 2px 2px 2rem black;
+    
+    
+        animation-name: slide-from-right;
+        animation-duration: 2s;
+    
+    
+    
+    
+    }
+    
+    .form {
+        color: white;
+    
+        height: 48.8vh;;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    
+        gap: 1vw;
+        background-color: rgba(2, 2, 1, 0.705);
+        border-radius: 0px 20px 20px 0px;
+    }
+    
+    .form h1 {
+    
+    
+      
+        font-size: 3em;
+        color: #fffdd9;
+        font-size: 5vw;
+    
+        color: rgb(248 3 3);
+        font-family: 'Alfa Slab One', cursive, sans-serif;
+        font-family: kratos;
+    
+    
+    
+    
+    
+    
+    }
+    
+    .input {
+    
+        width: 80%;
+    
+    
+    
+    
+    }
+    
+    .icon-login {
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        height:5vh ;
+    }
+    
+    .icon-login img {
+        width: 5vw;
+        height: 4vh;
+        
+
+        
+    }
+    
+    .input input {
+        width: 100%;
+        padding: 2vh;
+        border-radius: 10px;
+       
+        border: none;
+        outline: none;
+    }
+    
+    .login a {
+        color: white;
+        text-decoration: none;
+    
+    }
+    
+    .input label {
+        width: 100%;
+    }
+    
+    .img-login {
+    
+        height: 48.8vh;;
+        width: 40%;
+        display: flex;
+        border-radius: 20px 0px 0px 20px;
+        border-right: 4px solid rgb(248 3 3);
+    
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(2, 2, 1, 0.74);
+    
+    }
+    
+    .img-login img {
+        width: 40vw;
+    
+    }
+    
+    
+  
+    
+    #login {
+        width: 12vw;
+        padding: 0.5vw;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(248 3 3);
+        color: white;
+        font-weight: bolder;
+        transition: 2s;
+        cursor: pointer;
+    
+    }
+    
+    #login:hover {
+        box-shadow: 2px 2px 2rem rgb(255, 255, 255);
+        transition: 1s;
+        color: #000;
+    
+        transform: translate(5px);
+    }
+    
+    #login button:active {
+        transform: translate(-10px);
+        box-shadow: 0 5px 10px black;
+        background-color: rgba(255, 255, 255, 0.89);
+    
+    }
+    
+    .inscreva-se a {
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 40vw;
+        font-size: 3vw;
+        transition: 1s;
+       
+    }
+    
+    .inscreva-se img {
+        width: 4vw;
+        
+    }
+    
+    .inscreva-se a:hover {
+        color: aqua;
+        transition: 1s;
+    }
+}

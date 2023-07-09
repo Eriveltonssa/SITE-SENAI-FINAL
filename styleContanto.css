@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    object-position: center;
+    background-position: center center;
+    background-image: url("img/img-login/thumb-1920-714040.jpg");
+
+    
+}
+#form{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5rem black;
+    border: 4px solid rgba(255, 0, 0, 0.342);
+    width:40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    background-color: rgba(0, 0, 0, 0.541);
+
+    animation-name: slide-from-bottom;
+    animation-duration: 2s;
+}
+    
+
+#form h1{
+  color: white;
+}
+.input{
+  
+   
+    width: 35vw;  
+    display: flex;
+    align-items: center;
+    outline: none;
+    
+   
+    
+}
+#input-span{
+ 
+  display: flex;
+  
+}
+#input-span input{
+    width: 60%;
+}
+.input input{
+    width: 80%;
+    padding: 1.2vh;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.342);
+    color: white;
+    font-weight: bolder;
+   font-size: 1vw;
+   outline: none;
+   border: none;
+   
+}
+.input label{
+    width: 20%;
+    color: white;
+    font-size: 1.2vw;
+}
+.cadastro-icon{
+    display: flex;
+    gap: 1vw;
+}
+.cadastro-icon img{
+    width: 2vw;
+}
+#botao-cadastro{
+    
+    width: 35vw;
+    height: 4.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#botao-cadastro button{
+    width: 10vw;
+    padding: 0.5vw;
+    font-size: 1vw;
+    background-color: rgba(255, 0, 0, 0.342);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+   
+}
+
+
+
+#botao-cadastro button:hover{
+    transform: translate(5px);
+    box-shadow: 2px 2px 2rem white;
+    transition: 1s;
+
+   
+
+}
+
+
+
+
+
+
+@keyframes slide-from-bottom {
+
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translatey(0);
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .formulario{
+        display: none;
+    }
+}
+@media screen and (min-width:500px) {
+    .formulario-device{
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .formulario-device{
+    
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        object-position: center;
+        background-position: center center;
+        background-image: url("img/img-login/thumb-1920-714040.jpg");
+    
+        
+    }
+    #form{
+        border-radius: 10px;
+        box-shadow: 5px 5px 5rem black;
+        border: 4px solid rgba(255, 0, 0, 0.342);
+        width:90vw;
+        height: 58vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+        background-color: rgba(0, 0, 0, 0.541);
+    
+        animation-name: slide-from-bottom;
+        animation-duration: 2s;
+    }
+        
+    
+    #form h1{
+      color: white;
+      font-size: 5vw;
+    }
+    .input{
+      
+       
+        width: 70vw;  
+        display: flex;
+        align-items: center;
+        outline: none;
+        
+       
+        
+    }
+    #input-span{
+     
+      display: flex;
+      
+    }
+    #input-span input{
+        width: 60%;
+    }
+    .input input{
+        width: 80%;
+        padding: 2vh;
+        border-radius: 10px;
+        background-color: rgba(255, 0, 0, 0.342);
+        color: white;
+        font-weight: bolder;
+       font-size: 3vw;
+       outline: none;
+       border: none;
+       
+    }
+    .input label{
+        width: 20%;
+        color: white;
+        font-size:3vw;
+    }
+    .cadastro-icon{
+        display: flex;
+        gap: 1vw;
+    }
+    .cadastro-icon img{
+        width: 5vw;
+    }
+    #botao-cadastro{
+        
+        width: 35vw;
+        height: 4.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #botao-cadastro button{
+        width: 25vw;
+        padding: 1.7vw;
+        font-size: 2.6vw;
+        background-color: rgb(0, 183, 255);
+        color: rgb(10, 9, 9);
+        border-radius: 10px;
+        font-weight: bolder;
+        border: none;
+        cursor: pointer;
+        transition: 1s;
+        margin-top: 1vh;
+        
+       
+    }
+    
+    
+    
+    #botao-cadastro button:hover{
+        transform: translate(5px);
+        box-shadow: 2px 2px 2rem white;
+        transition: 1s;
+        
+    
+       
+    
+    } 
+}
