@@ -1949,6 +1949,47 @@ position: relative;
 }
 
 
+/* ____div___ */
+.container { 
+    margin-top: 10vh;
+    position: relative;
+    width: 100vw;
+    height:60vh;
+    overflow: hidden;
+    background-color: black;
+    
+  }
+  .content {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    width: 50vw;
+    transform: translateX(-50%);
+    background-color: #08060680;
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: kratos;
+    transition: top 0.9s;
+  }
+  .content img{
+    width: 40vw;
+    cursor: pointer;
+  }
+  
+
+  
+  .container:hover .content {
+    top: 70%;
+  }
+.container div video{
+    width: 100vw;
+    background-size: cover;
+   background-position: center;
+
+}
 
 
 
@@ -1964,6 +2005,8 @@ position: relative;
     flex-direction: column;
     justify-content: center;
     position: relative;
+    
+   
 
 
 
@@ -1979,17 +2022,23 @@ position: relative;
 
 #card {
 
-    width: 95vw;
+    width: 100vw;
     height: 75vh;
     display: flex;
     justify-content: space-between;
     padding: 0.5vw;
     align-items: center;
     gap: 1rem;
+
+    
+   
+    
+    
+    
 }
 
 #cards {
-
+   
 
 
     height: 65vh;
@@ -2229,7 +2278,7 @@ position: relative;
     width: 40vw;
 
     position: absolute;
-    margin-top: 34%;
+    margin-top: 67%;
 
 }
 
@@ -2290,6 +2339,7 @@ position: relative;
 
         width: 95%;
         height: 57vh;
+        
 
 
 
@@ -2300,7 +2350,7 @@ position: relative;
         gap: 1rem;
         flex-direction: column;
         flex-wrap: wrap;
-        overflow-y: scroll
+        overflow-y: scroll;
     }
 
     #cards {
