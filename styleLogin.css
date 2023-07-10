@@ -308,7 +308,7 @@
         color: white;
     
         height: 48.8vh;;
-        width: 60%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -317,7 +317,7 @@
     
         gap: 1vw;
         background-color: rgba(2, 2, 1, 0.705);
-        border-radius: 0px 20px 20px 0px;
+        border-radius: 20px 20px 20px 20px;
     }
     
     .form h1 {
@@ -387,10 +387,11 @@
     .img-login {
     
         height: 48.8vh;;
-        width: 40%;
+        width: 0%;
+       
         display: flex;
-        border-radius: 20px 0px 0px 20px;
-        border-right: 4px solid rgb(248 3 3);
+        border-radius: 20px 20px 20px 20px;
+       
     
         align-items: center;
         justify-content: center;
@@ -400,15 +401,16 @@
     
     .img-login img {
         width: 40vw;
+        display: none;
     
     }
     
     
   
     
-    #login {
-        width: 12vw;
-        padding: 0.5vw;
+    #login-device {
+        width: 28vw;
+        padding: 1vw;
         border-radius: 10px;
         border: none;
         background-color: rgb(248 3 3);
@@ -419,7 +421,7 @@
     
     }
     
-    #login:hover {
+    #login-device:hover {
         box-shadow: 2px 2px 2rem rgb(255, 255, 255);
         transition: 1s;
         color: #000;
@@ -427,7 +429,7 @@
         transform: translate(5px);
     }
     
-    #login button:active {
+    #login-device button:active {
         transform: translate(-10px);
         box-shadow: 0 5px 10px black;
         background-color: rgba(255, 255, 255, 0.89);

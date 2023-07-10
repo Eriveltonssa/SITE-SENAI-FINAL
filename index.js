@@ -1,6 +1,6 @@
 
 
-if(!localStorage.getItem('email')){
+if (!localStorage.getItem('email')) {
     alert('Voce nao esta logado!\n Logue para ter acesso ao sistema!')
     location.href = 'login.html'
 }
@@ -10,20 +10,20 @@ var url = "login.html"
 var icon = document.querySelector(`#logout`)
 
 
-function openInNewTab(url){
-    if(confirm('Deseja sair?')) {
-        
-     const win = window.open(url)
-    win.focus()   
+function openInNewTab(url) {
+    if (confirm('Deseja sair?')) {
 
-      }
+        const win = window.open(url)
+        win.focus()
+
+    }
 
 }
 
 
 
 
-icon.addEventListener(`click`, ()=>{
+icon.addEventListener(`click`, () => {
     openInNewTab(url)
 
 
@@ -36,20 +36,20 @@ var url = "login.html"
 var icon = document.querySelector(`#logout-device`)
 
 
-function openInNewTab(url){
-    if(confirm('Deseja sair?')) {
-        
-     const win = window.open(url)
-    win.focus()   
+function openInNewTab(url) {
+    if (confirm('Deseja sair?')) {
 
-      }
+        const win = window.open(url)
+        win.focus()
+
+    }
 
 }
 
 
 
 
-icon.addEventListener(`click`, ()=>{
+icon.addEventListener(`click`, () => {
     openInNewTab(url)
 
 
@@ -69,10 +69,10 @@ let carrinho = [];
 function adicionarAoCarrinho(nome, preco) {
     carrinho.push({ nome, preco });
     atualizarCarrinho();
-  
 
- 
-    
+
+
+
 }
 
 // Função para remover um produto do carrinho
@@ -94,8 +94,8 @@ function atualizarCarrinho() {
     for (let i = 0; i < carrinho.length; i++) {
         let produto = carrinho[i];
         let produtoElement = document.createElement("div");
-        produtoElement.innerHTML = produto.nome + " - R$ " + produto.preco.toFixed(2) + 
-        "<button onclick=\"removerDoCarrinho(" + i + ")\">Remover</button>";
+        produtoElement.innerHTML = produto.nome + " - R$ " + produto.preco.toFixed(2) +
+            "<button onclick=\"removerDoCarrinho(" + i + ")\">Remover</button>";
         carrinhoElement.appendChild(produtoElement);
     }
 }
@@ -114,6 +114,57 @@ function limparCarrinho() {
     carrinho = [];
     atualizarCarrinho();
 }
+
+var urlPedido = "pedido.html"
+var car = document.getElementById("preco-carrinho")
+
+car.addEventListener(`click`, () => {
+    if (confirm('Deseja realizar a compra?')) {
+
+        const win = window.open(urlPedido)
+    win.focus()   
+
+      }
+      
+      localStorage.setItem("produtosSelecionados", JSON.stringify(carrinho));
+      var produtosString = localStorage.getItem("produtosSelecionados");
+      var produtosSelecionados = JSON.parse(carrinho);
+      var divCarrinho = document.getElementById("produtosSelecionados");
+    
+      produtosSelecionados.forEach(function(produto) {
+
+        
+        var paragrafo = document.createElement("p");
+        paragrafo.textContent = "Nome: " + nome + ", produto.Preço: " + produto.preco  ;
+      
+        // Adicione o parágrafo à div do carrinho
+        divCarrinho.appendChild(paragrafo);
+      });
+    
+      
+      
+      
+      
+      
+      
+      
+
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 // menu
 

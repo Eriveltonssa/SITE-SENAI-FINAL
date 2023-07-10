@@ -18,8 +18,12 @@ btnLogin.addEventListener('click', ()=>{
         email.style.border = "1px solid red"
         senha.style.border = "1px solid red"
        
-        // audio.pause()
+        
     }
 })
+
+
+// _____________+++__________
+
 
 

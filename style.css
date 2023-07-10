@@ -2745,6 +2745,9 @@ position: relative;
 #preco-carrinho span {
     background-color: inherit;
 }
+#preco-carrinho {
+   
+}
 
 #preco-carrinho a {
     color: white;
